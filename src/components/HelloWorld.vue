@@ -8,7 +8,9 @@ const uppercase = computed(() => props.name.toUpperCase())
 
 <template>
   <div>
-    <h1>Hello,{{ uppercase }}</h1>
+    <h1 text="green 2xl" font-mono>Hello,{{ uppercase }}</h1>
+    <div i-carbon:bat text-5xl></div>
+    <span i-ph:activity></span>
   </div>
 </template>
 
