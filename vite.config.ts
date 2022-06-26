@@ -16,9 +16,9 @@ export default defineConfig({
     UnoCss({
       presets: [
         presetUno(),
-        //开启属性Css
+        // 开启属性Css
         presetAttributify(),
-        //Icon
+        // Icon
         presetIcons(),
       ],
     }),
