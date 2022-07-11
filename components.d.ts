@@ -5,7 +5,10 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AcitonBar: typeof import('./src/components/AcitonBar.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    TimeSchedule: typeof import('./src/components/TimeSchedule.vue')['default']
+    TimezoneSearch: typeof import('./src/components/TimezoneSearch.vue')['default']
   }
 }
 
