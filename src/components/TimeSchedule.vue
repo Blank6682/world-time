@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import { zones } from '~/utils/state'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div border="~ gray/15" mx2 p2>

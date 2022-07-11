@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import Fuse from 'fuse.js'
 import type { Timezone } from '~/types'
-import { timezones } from '~/utils/combineData'
-import { addToTimezon } from '~/utils/state'
 
 const fuse = new Fuse(timezones, {
   keys: ['name'],

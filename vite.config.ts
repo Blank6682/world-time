@@ -13,6 +13,8 @@ export default defineConfig({
     Components(),
     AutoImport({
       imports: ['vue'],
+      dirs: ['./src/utils'],
+      vueTemplate: true,
     }),
     UnoCss({
       presets: [
