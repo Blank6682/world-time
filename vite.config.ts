@@ -14,11 +14,16 @@ export default defineConfig({
     }),
     Components(),
     AutoImport({
-      imports: ['vue', 'vue/macros'],
+      imports: ['vue', 'vue/macros', '@vueuse/core'],
       dirs: ['./src/utils'],
       vueTemplate: true,
     }),
     UnoCss({
+      shortcuts: {
+        'border-base': 'border-gray/15 dark:border-gray/15',
+        'bg-base': ' bg-white dark:bg-truegray-900',
+        'bg-canvas': 'bg-gray:15 dark:bg-truegray-800',
+      },
       presets: [
         presetUno(),
         // 开启属性Css

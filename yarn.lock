@@ -224,6 +224,11 @@
   "resolved" "https://r2.cnpmjs.org/@types/unist/-/unist-2.0.6.tgz"
   "version" "2.0.6"
 
+"@types/web-bluetooth@^0.0.14":
+  "integrity" "sha512-5d2RhCard1nQUC3aHcq/gHzWYO6K0WJmAbjO7mQJgCQKtZpgXxv1rOM6O/dBDhDYYVutk1sciOgNSe+5YyfM8A=="
+  "resolved" "https://r.cnpmjs.org/@types/web-bluetooth/-/web-bluetooth-0.0.14.tgz"
+  "version" "0.0.14"
+
 "@typescript-eslint/eslint-plugin@^5.26.0":
   "integrity" "sha512-lftkqRoBvc28VFXEoRgyZuztyVUQ04JvUnATSPtIRFAccbXTWL6DEtXGYMcbg998kXw1NLUJm7rTQ9eUt+q6Ig=="
   "resolved" "https://r.cnpmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.30.5.tgz"
@@ -581,6 +586,28 @@
   "integrity" "sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg=="
   "resolved" "https://r.cnpmjs.org/@vue/tsconfig/-/tsconfig-0.1.3.tgz"
   "version" "0.1.3"
+
+"@vueuse/core@*", "@vueuse/core@^8.9.1":
+  "integrity" "sha512-a7goYb/gJxjXRBw4Fr/jEACiN33ghwM1ohJVu+Zwsr3lNL4qCQ1nU+ogta98lNg5hXJxWj7mYEmQDjjyWOu5nA=="
+  "resolved" "https://r.cnpmjs.org/@vueuse/core/-/core-8.9.1.tgz"
+  "version" "8.9.1"
+  dependencies:
+    "@types/web-bluetooth" "^0.0.14"
+    "@vueuse/metadata" "8.9.1"
+    "@vueuse/shared" "8.9.1"
+    "vue-demi" "*"
+
+"@vueuse/metadata@8.9.1":
+  "integrity" "sha512-6LADOlyl3oENHa9dsoY7LXjU1Mh14DnpM6ztETI3hpm5ZffOMIG5CB2Q6aEZfIvYr1lkJVmG2L82wFKk7VRfIA=="
+  "resolved" "https://r.cnpmjs.org/@vueuse/metadata/-/metadata-8.9.1.tgz"
+  "version" "8.9.1"
+
+"@vueuse/shared@8.9.1":
+  "integrity" "sha512-klZfn7ijI3juqVgpfQVrrlBh4uTFajwSCWm8Cdt45Kg26b1LZ9jn9n7J6GhmkFay5016GnjjivQoekQSMeJNUg=="
+  "resolved" "https://r.cnpmjs.org/@vueuse/shared/-/shared-8.9.1.tgz"
+  "version" "8.9.1"
+  dependencies:
+    "vue-demi" "*"
 
 "acorn-jsx@^5.3.2":
   "integrity" "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ=="
@@ -3072,6 +3099,11 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
+"vue-demi@*":
+  "integrity" "sha512-41ukrclEbMddAyP7PvxMSYqnOSzPV6r7GNnyTSKSCNTaz19GehxmTiXyP9kwHSUv2+Dr6hHqiUiF7L1VAw2KdQ=="
+  "resolved" "https://r.cnpmjs.org/vue-demi/-/vue-demi-0.13.2.tgz"
+  "version" "0.13.2"
+
 "vue-eslint-parser@^9.0.1":
   "integrity" "sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og=="
   "resolved" "https://r.cnpmjs.org/vue-eslint-parser/-/vue-eslint-parser-9.0.3.tgz"
@@ -3092,7 +3124,7 @@
   dependencies:
     "@volar/vue-typescript" "0.38.1"
 
-"vue@^3.2.25", "vue@^3.2.37", "vue@2 || 3", "vue@3.2.37":
+"vue@^2.6.0 || ^3.2.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.25", "vue@^3.2.37", "vue@2 || 3", "vue@3.2.37":
   "integrity" "sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ=="
   "resolved" "https://r.cnpmjs.org/vue/-/vue-3.2.37.tgz"
   "version" "3.2.37"

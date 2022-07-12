@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div border="~ gray/15" mt2 mx2 p2>
+  <div border="~ base" p4>
     <TimezoneSearch />
   </div>
 </template>
