@@ -17,7 +17,7 @@ const offset = $computed(() =>
 <template>
   <div flex gap-2 py1>
     <div w-8 ma op80 font-bold>
-      {{ timezone.offset }}
+      {{ offset }}
     </div>
     <div flex="~ col" text-left flex-auto>
       <div>

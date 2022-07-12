@@ -40,14 +40,14 @@ function onKeyDown(e: KeyboardEvent) {
     >
     <div
       v-show="input"
-      absolute top-full left-0 right-0 p1
-      bg-base border="~ base" max-h-100 overflow-auto
+      absolute top-full left-0 right-0 p1 max-h-100
+      bg-base border="~ base rounded" shadow overflow-auto
     >
       <button
         v-for="(i, idx) in searchResult"
         :key="i.refIndex"
-        block w-full
-        :class="idx === index ? 'bg-gray:5' : ''"
+        block w-full px2
+        :class="idx === index ? 'bg-gray:10' : ''"
         @click="add(i.item)"
       >
         <TimezoneItem :timezone="i.item" />
