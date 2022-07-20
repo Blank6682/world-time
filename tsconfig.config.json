@@ -3,8 +3,6 @@
   "include": ["vite.config.*", "vitest.config.*", "cypress.config.*"],
   "compilerOptions": {
     "composite": true,
-    "types": ["node"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "types": ["node"]
   }
 }
