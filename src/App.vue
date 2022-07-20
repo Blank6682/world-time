@@ -3,7 +3,7 @@
 <template>
   <div text-sans bg-canvas h-screen>
     <NavBar />
-    <div border="~ base rounded" bg-base shadow m2>
+    <div border="~ base rounded" bg-base shadow m8>
       <AcitonBar />
       <TimeSchedule />
     </div>

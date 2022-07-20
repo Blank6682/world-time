@@ -30,7 +30,7 @@ function onKeyDown(e: KeyboardEvent) {
 </script>
 
 <template>
-  <div relative>
+  <div relative z-index:2>
     <input
       v-model="input"
       type="text"
