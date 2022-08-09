@@ -909,6 +909,11 @@
   "resolved" "https://r.cnpmjs.org/csstype/-/csstype-2.6.20.tgz"
   "version" "2.6.20"
 
+"date-fns@^2.29.1":
+  "integrity" "sha512-dlLD5rKaKxpFdnjrs+5azHDFOPEu4ANy/LTh04A1DTzMM7qoajmKCBc8pkKRFT41CNzw+4gQh79X5C+Jq27HAw=="
+  "resolved" "https://registry.npmmirror.com/date-fns/-/date-fns-2.29.1.tgz"
+  "version" "2.29.1"
+
 "debug@^2.6.9":
   "integrity" "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA=="
   "resolved" "https://r2.cnpmjs.org/debug/-/debug-2.6.9.tgz"

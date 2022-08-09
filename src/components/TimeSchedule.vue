@@ -14,20 +14,27 @@ import { moveZone, removeZone } from '~/utils/state'
       </TimezoneItem>
       <div absolute left="-5" top-0 bottom-0 flex="~ col" justify-center>
         <button
-          icon-btn i-carbon-close
+          v-if="idx !== 0"
+          icon-btn m--1px i-carbon-caret-up
+          title="Move up"
+          @click="moveZone(zone, -1)"
+        />
+        <button
+          v-if="homeZone !== zone?.name"
+          icon-btn m--1px i-carbon-close
           title="Remove"
           @click="removeZone(zone)"
         />
         <button
-          v-if="idx !== 0" icon-btn
-          i-carbon-caret-up
-          title="Move Up"
-          @click="moveZone(zone, -1)"
+          v-if="homeZone !== zone?.name"
+          icon-btn m--1px i-carbon-home scale-75
+          title="Set to home zone"
+          @click="setHomeZone(zone)"
         />
         <button
           v-if="idx !== zones.length - 1"
-          icon-btn i-carbon-caret-down
-          title="Move Down"
+          icon-btn m--1px i-carbon-caret-down
+          title="Move down"
           @click="moveZone(zone, 1)"
         />
       </div>

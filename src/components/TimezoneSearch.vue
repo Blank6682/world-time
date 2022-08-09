@@ -40,7 +40,7 @@ function onKeyDown(e: KeyboardEvent) {
     >
     <div
       v-show="input"
-      absolute top-full left-0 right-0 p1 max-h-100
+      absolute top-full left-0 right-0 p1 max-h-100 z-10
       bg-base border="~ base rounded" shadow overflow-auto
     >
       <button
