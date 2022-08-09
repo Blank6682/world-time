@@ -51,6 +51,7 @@ declare global {
   const markRaw: typeof import('vue')['markRaw']
   const moveZone: typeof import('./src/utils/state')['moveZone']
   const nextTick: typeof import('vue')['nextTick']
+  const now: typeof import('./src/utils/state')['now']
   const onActivated: typeof import('vue')['onActivated']
   const onBeforeMount: typeof import('vue')['onBeforeMount']
   const onBeforeUnmount: typeof import('vue')['onBeforeUnmount']
@@ -95,7 +96,7 @@ declare global {
   const templateRef: typeof import('@vueuse/core')['templateRef']
   const throttledRef: typeof import('@vueuse/core')['throttledRef']
   const throttledWatch: typeof import('@vueuse/core')['throttledWatch']
-  const timezones: typeof import('./src/utils/combineData')['timezones']
+  const timezones: typeof import('./src/utils/data')['timezones']
   const toRaw: typeof import('vue')['toRaw']
   const toReactive: typeof import('@vueuse/core')['toReactive']
   const toRef: typeof import('vue')['toRef']
@@ -313,6 +314,7 @@ declare module '@vue/runtime-core' {
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
     readonly moveZone: UnwrapRef<typeof import('./src/utils/state')['moveZone']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
+    readonly now: UnwrapRef<typeof import('./src/utils/state')['now']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
     readonly onBeforeUnmount: UnwrapRef<typeof import('vue')['onBeforeUnmount']>
@@ -357,7 +359,7 @@ declare module '@vue/runtime-core' {
     readonly templateRef: UnwrapRef<typeof import('@vueuse/core')['templateRef']>
     readonly throttledRef: UnwrapRef<typeof import('@vueuse/core')['throttledRef']>
     readonly throttledWatch: UnwrapRef<typeof import('@vueuse/core')['throttledWatch']>
-    readonly timezones: UnwrapRef<typeof import('./src/utils/combineData')['timezones']>
+    readonly timezones: UnwrapRef<typeof import('./src/utils/data')['timezones']>
     readonly toRaw: UnwrapRef<typeof import('vue')['toRaw']>
     readonly toReactive: UnwrapRef<typeof import('@vueuse/core')['toReactive']>
     readonly toRef: UnwrapRef<typeof import('vue')['toRef']>

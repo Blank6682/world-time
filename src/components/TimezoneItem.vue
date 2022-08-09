@@ -1,32 +1,46 @@
 <script setup lang="ts">
+import { now } from '@vueuse/core'
 import type { Timezone } from '~/types/Timezone'
 
-const props = defineProps<{
+const { timezone } = defineProps<{
   timezone: Timezone
 }>()
 
-const state = $computed(() => props.timezone.name.split('/')[0])
-const city = $computed(() => props.timezone.name.split('/')[1])
+const formatTimezone = new Intl.DateTimeFormat('en-US', {
+  timeZone: timezone.name,
+  hour: 'numeric',
+  minute: 'numeric',
+})
+
+const state = $computed(() => timezone.name.split('/')[0])
+const city = $computed(() => timezone.name.split('/')[1]?.replace(/_/g, ' '))
 const offset = $computed(() =>
-  props.timezone.offset > 0
-    ? `+${props.timezone.offset}`
-    : props.timezone.offset,
+  timezone.offset > 0
+    ? `+${timezone.offset}`
+    : timezone.offset,
 )
+
+const time = $computed(() => formatTimezone.format(now()))
 </script>
 
 <template>
-  <div flex gap-2 py1>
+  <div flex flex-wrap gap-2 py1>
     <div w-8 ma op80 font-bold>
       {{ offset }}
     </div>
     <div flex="~ col" text-left flex-auto>
       <div>
-        {{ state }}
+        {{ city }}
+        <sup border="~ base rounded" px1> {{ timezone.abbr }}</sup>
       </div>
       <div text-sm op50>
-        {{ city }}
+        {{ state }}
       </div>
     </div>
+    <div tabular-nums>
+      {{ time }}
+    </div>
+    <slot />
   </div>
 </template>
 

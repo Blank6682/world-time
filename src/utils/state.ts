@@ -1,5 +1,6 @@
 import type { Timezone } from '~/types/Timezone'
 
+export const now = useNow({ interval: 30_000 })
 export const zoneNames = useStorage<string[]>('world-timezones', [])
 export const zones = $computed(() => zoneNames.value.map(name => timezones.find(i => i.name === name)))
 

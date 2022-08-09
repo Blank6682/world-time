@@ -4,8 +4,14 @@ import { moveZone, removeZone } from '~/utils/state'
 
 <template>
   <div>
-    <div v-for="zone, idx in zones" :key="zone.name" relative px4 py2 border="~ base" z-index:1>
-      <TimezoneItem :timezone="zone" />
+    <div
+      v-for="zone, idx in zones" :key="zone.name"
+      relative px4 py2
+      border="~ base"
+    >
+      <TimezoneItem :timezone="zone">
+        <TimeDial :timezone="zone" />
+      </TimezoneItem>
       <div absolute left="-5" top-0 bottom-0 flex="~ col" justify-center>
         <button
           icon-btn i-carbon-close
